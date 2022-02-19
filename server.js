@@ -3,7 +3,7 @@ var http = require('http').createServer(app);
 // var io = require('socket.io')(http);
 const io = require("socket.io")(http, {
       cors: {
-        origin: ['https://live-class.iquestmath.com/', 'https://live-class.iquestmath.com/*', 'http://localhost:3000', 'http://localhost:3000/*'],
+        origin: ['https://live-class.iquestmath.com/', 'https://mathsocket.herokuapp.com/', 'https://live-class.iquestmath.com/*', 'http://localhost:3000', 'http://localhost:3000/*'],
         methods: ["GET", "POST"]
       },
       allowEIO3: true
